@@ -1,7 +1,7 @@
 package basic_class.class06;
 
 /**
- * 给定一个数组arr和一个整数aim
+ * 给定一个数组arr（都为正数）和一个整数aim
  * 如果可以任意选择arr中的数字，能不能累加得到aim，返回true或者false
  */
 public class Code_08_Money_Problem {
