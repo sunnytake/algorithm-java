@@ -26,14 +26,14 @@ public class Code_15_StreamMidNum {
             if(!maxHeap.isEmpty() && num < maxHeap.peek()){
                 // 如果num小于最大堆，那么先插入最大堆
                 maxHeap.add(num);
-                maxHeap.poll();
+                num = maxHeap.poll();
             }
             minHeap.add(num);
         }else{
             // 第奇数个，插入最大堆
             if(!minHeap.isEmpty() && num > minHeap.peek()){
                 minHeap.add(num);
-                minHeap.poll();
+                num = minHeap.poll();
             }
             maxHeap.add(num);
         }

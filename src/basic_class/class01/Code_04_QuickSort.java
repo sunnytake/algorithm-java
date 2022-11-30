@@ -19,7 +19,7 @@ public class Code_04_QuickSort {
 
     public static void quickSort(int[] array, int left, int right){
         if(left < right){
-            swap(array, right, 1 + (int)(Math.random() * (right - left + 1)));
+            swap(array, right, left + (int)(Math.random() * (right - left + 1)));
             int[] p = partition(array, left, right);
             quickSort(array, left, p[0]-1);
             quickSort(array, p[1]+1, right);
@@ -41,6 +41,13 @@ public class Code_04_QuickSort {
         }
         swap(array, more, right);
         return new int[] {less+1, more};
+    }
+
+    public static void main(String[] args) {
+        int[] array = {3, 1, 7, 2, 5, 8};
+        quickSort(array);
+        for(int value : array)
+            System.out.print(value + "\t");
     }
 
 }

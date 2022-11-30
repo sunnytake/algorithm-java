@@ -15,7 +15,7 @@ import java.util.Stack;
  */
 public class Code_07_MaxSubMatrix {
 
-            public static Integer getMaxSubMatrix(int[][] mat){
+    public static Integer getMaxSubMatrix(int[][] mat){
         if(mat == null || mat.length == 0 || mat[0].length == 0)
             return null;
         int[] heights = new int[mat[0].length];

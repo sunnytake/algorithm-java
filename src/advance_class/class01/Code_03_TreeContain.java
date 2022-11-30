@@ -59,7 +59,7 @@ public class Code_03_TreeContain {
             }else if(cn > 0){
                 cn = nexts[cn];
             }else{
-                nexts[pos] = 0;
+                nexts[pos++] = 0;
             }
         }
         return nexts;

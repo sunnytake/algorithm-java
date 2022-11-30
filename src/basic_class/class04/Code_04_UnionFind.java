@@ -29,11 +29,11 @@ public class Code_04_UnionFind {
         }
 
         public Node findHead(Node node){
-            Node fathter = this.fatherMap.get(node);
-            while(fathter != node)
-                fathter = this.fatherMap.get(fathter);
-            fatherMap.put(node, fathter);
-            return fathter;
+            Node father = this.fatherMap.get(node);
+            while(father != node)
+                father = this.fatherMap.get(father);
+            fatherMap.put(node, father);
+            return father;
         }
 
         public void union(Node a, Node b){

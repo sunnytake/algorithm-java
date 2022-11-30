@@ -34,7 +34,7 @@ public class Code_07_IsBSTAndCBT {
                 cur = cur.left;
             }
             cur = stack.pop();
-            if(pre == null || cur.value < pre.value){
+            if(pre != null && cur.value < pre.value){
                 return false;
             }
             pre = cur;

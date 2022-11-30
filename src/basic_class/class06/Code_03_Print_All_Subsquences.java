@@ -4,6 +4,12 @@ package basic_class.class06;
  * 打印所有字符串的子串
  */
 public class Code_03_Print_All_Subsquences {
+
+    public static void printAllSub(String str){
+        if(str == null)
+            return;
+        printAllSub(str.toCharArray(), 0, "");
+    }
     public static void printAllSub(char[] str, int i, String res){
         if(i == str.length) {
             System.out.println(res);
@@ -15,6 +21,6 @@ public class Code_03_Print_All_Subsquences {
 
     public static void main(String[] args) {
         String test = "test";
-        printAllSub(test.toCharArray(), 0, "");
+        printAllSub(test);
     }
 }

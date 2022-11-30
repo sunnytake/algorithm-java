@@ -2,7 +2,7 @@ package basic_class.class05;
 
 
 /**
- * 前缀树
+ * 前缀树：根节点到某个结点的路径为经过该节点/以该节点为结尾的单词的树木
  */
 public class Code_01_TrieTree {
 
@@ -29,6 +29,7 @@ public class Code_01_TrieTree {
         public void insert(String word){
             if(word == null)
                 return;
+            root.path++;
             TrieNode node = this.root;
             char[] chars = word.toCharArray();
             int index = 0;
